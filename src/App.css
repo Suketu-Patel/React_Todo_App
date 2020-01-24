@@ -1,0 +1,224 @@
+body{
+  background-color: rgb(240, 240, 240);
+}
+.mainContainer{
+  height: 100vh;
+  width: 100%;
+}
+.toDoList{
+  width: 100%;
+  min-height: 50%;
+}
+.wrapper{
+  width: 100%;
+  min-height: 300px;
+  padding: 10px;
+  box-shadow: 2px 0px 50px rgba(0,0,0,0.2);
+}
+
+.heading{
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  color: #cdcdcd;
+  padding: 10px;
+}
+
+.todo {
+  height: 40px;
+  line-height: 40px;
+  padding: 0%;
+  outline:none;
+  border:none;
+  background-color: transparent;
+  margin-left: 5px;
+}
+
+.lsC{
+  margin-top: 10px;
+  display: block;
+  height: 40px;
+  background-color:lightgray;
+  box-shadow: 2px 2px black;
+}
+.lis{                                                                                          
+    height: 40px;
+    /* line-height: 40px; */
+    /* padding: 10px; */
+    text-decoration: line-through;
+    color: gray;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	background-color: white;
+	/* box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05); */
+	padding: 7px;
+	border-radius: 3px;
+	display: inline-block;
+  position: relative;
+  margin: 1px 0px 0px 5px;
+  box-shadow: 2px 2px black;
+}
+input[type="checkbox"]:checked{
+  background-color: rgb(172, 172, 172);
+  border: rgb(172, 172, 172);
+  outline:none;
+}
+input[type="checkbox"]:checked:after {
+	content: '\2714';
+	font-size: 13px;
+	position: absolute;
+  top: 0px;
+  left:2px;
+  color: black;
+}
+
+.inputPart{
+  width: 97.7%;
+  margin-bottom: 10px;
+  border: 5px solid rgb(153, 153, 153);
+}
+.inputL{
+  font-size: 1.1em;
+  height: 30px;
+  border: none;
+  width:100%;
+  outline:none;
+  background: rgb(221, 221, 221);
+}
+
+.inputL:focus{
+  font-size: 1.1em;
+  height: 30px;
+  border: none;
+  padding: 0%;
+  width:100%;
+  outline:none;
+  background: white;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+.removebtn{
+  background-color: rgb(255, 97, 97);
+  float: right;
+  top: 50%;
+  height: 25px;
+  width: 25px;
+  border:none;
+  /* box-shadow: 2px 2px black; */
+  outline: none;
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+  font-size: 18px;
+  margin:3px;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+}
+.removebtn:active{
+  background-color: rgb(255, 70, 70);
+  float: right;
+  top: 50%;
+  height: 25px;
+  width: 25px;
+  border:none;
+  /* box-shadow: 2px 2px black; */
+  outline: none;
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+  font-size: 18px;
+  margin:3px;
+}
+.listPart{
+  width: 100%;
+  height: 100%;
+}
+
+.Card {
+  display: inline-block;
+  padding: 10px;
+  background-color: grey;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.74);
+}
+
+.inputSub {
+  font-size: 1.1em;
+  height: 30px;
+  border: none;
+  width:80%;
+  outline:none;
+  background-color: transparent;
+  font-weight: 600;
+  color: white;
+  /* border-right: 1px solid rgba(255, 255, 255, 0.185); */
+  /* margin-right: 2px; */
+  /* border-bottom: 1px solid rgb(65, 65, 65); */
+}
+.addBtn {
+  border:none;
+  outline:none;
+  background-color: rgb(184, 184, 184);
+  font-size: large;
+  width: 15%;
+  height: 30px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.74);
+  margin-left: 2px;
+}
+.addBtn:active {
+  border:none;
+  outline:none;
+  background-color: rgb(184, 184, 184);
+  font-size: large;
+  width: 15%;
+  height: 30px;
+  box-shadow: none;
+}
+.inputSub::placeholder {
+  color: rgb(226, 226, 226);
+  font-weight: 600;
+}
+.dltCard {
+  background-color: transparent;
+  height: 10px;
+  width: 10px;
+  border:none;
+  margin-right:5px;
+  /* box-shadow: 2px 2px black; */
+  outline: none;
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+  font-size: 13px;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+}
+.dltC {
+  text-align: end;
+  margin-bottom: 4px;
+}
+hr {
+  opacity: 0.3;
+}
+/* .editBtn{
+  background-color: rgb(120, 194, 243);
+  float: right;
+  top: 50%;
+  height: 100%;
+  width: 15%;
+  border:none;
+  box-shadow: 2px 2px black;
+  outline: none;
+  font-weight: 500;
+  color: rgb(70, 70, 70);
+  font-size: 18px;
+} */
+
+/* .inputE{
+  visibility: hidden;
+  font-size: 1.1em;
+  height: 40px;
+  border: none;
+  padding: 0%;
+  width:100%;
+  z-index: 120;
+} */

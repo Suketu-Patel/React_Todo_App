@@ -1,5 +1,16 @@
 {
-    "id": 0,
-    "text": "Sample to-do",
-    "completed": false
+    "cards": [
+        {
+            "id": 0,
+            "subject": "",
+            "todos": [
+                {
+                    "id": 0,
+                    "text": "Sample to-do",
+                    "completed": false
+                }
+            ]
+        }
+    ],
+    "val": ""
 }
